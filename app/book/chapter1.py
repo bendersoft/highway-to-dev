@@ -4,7 +4,7 @@ from app.core import Chapter
 
 class Chapter1(Chapter):
     _title = "Chapter 1 title"
-    _content = "Chapter 1 content"
+    _content = "This is the first chapter content.\nIt is multiline.\nBecause it is a chapter, not a title"
 
     def title(self) -> str:
         """
@@ -19,14 +19,5 @@ class Chapter1(Chapter):
 
         :return:
         """
-        content = "Chapter 1 title"
 
         return self._content
-
-    def count(self) -> int:
-        """
-
-        :return:
-        """
-        total = self.title().__len__() + self.content().__len__()
-        return total
