@@ -26,7 +26,7 @@ class Chapter:
 
         :return:
         """
-        total = self.title().__len__() + self.content().__len__()
+        total = len(self.title()) + len(self.content())
         return total
 
     def count_words(self) -> int:
@@ -34,5 +34,5 @@ class Chapter:
 
         :return:
         """
-        total = self.title().split(' ').__len__() + self.content().split(' ').__len__()
+        total = len(self.title().split(' ')) + len(self.content().split(' '))
         return total

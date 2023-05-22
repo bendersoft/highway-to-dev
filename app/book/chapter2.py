@@ -21,11 +21,3 @@ class Chapter2(Chapter):
         """
 
         return self._content
-
-    def count_char(self) -> int:
-        """
-
-        :return:
-        """
-        total = self.title().__len__() + self.content().__len__()
-        return total
