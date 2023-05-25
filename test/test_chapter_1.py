@@ -1,20 +1,30 @@
 
-import unittest
+"""
+Chapter 1 unit test
+"""
 
-from app.book import Chapter1
+import unittest
+from book import Chapter1
 
 
 class MyTestCase(unittest.TestCase):
+    """
+    Chapter 1 unit test class
+    """
 
     @classmethod
     def setUpClass(cls):
-        cls.chapter = Chapter1()
+        """
+        Init class called one time before tests
+        """
+
+        cls.chapter_1 = Chapter1()  # Create the tested class instance
 
     def test_chapter1_title(self):
         """
         Test the exact chapter title
         """
-        title = self.chapter.title()
+        title = self.chapter_1.title()
         # REM: assert(Expected, Actual)
         self.assertEqual("Chapter 1 title", title)
 
@@ -24,7 +34,7 @@ class MyTestCase(unittest.TestCase):
         :return:
         """
         expected = "This is the first chapter content.\nIt is multiline.\nBecause it is a chapter, not a title"
-        content = self.chapter.content()
+        content = self.chapter_1.content()
         # REM: assert(Expected, Actual)
         self.assertEqual(expected, content)
 
@@ -34,7 +44,7 @@ class MyTestCase(unittest.TestCase):
         :return:
         """
         expected = 103
-        content = self.chapter.count_char()
+        content = self.chapter_1.count_char()
         # REM: assert(Expected, Actual)
         self.assertEqual(expected, content)
 
@@ -44,7 +54,7 @@ class MyTestCase(unittest.TestCase):
         :return:
         """
         expected = 18
-        content = self.chapter.count_words()
+        content = self.chapter_1.count_words()
         # REM: assert(Expected, Actual)
         self.assertEqual(expected, content)
 

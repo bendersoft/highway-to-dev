@@ -4,8 +4,8 @@
     python -m app
 
 """
-from textwrap import dedent
 
+from textwrap import dedent
 from book import SpecialPages
 from book import Chapter1
 from book import Chapter2
