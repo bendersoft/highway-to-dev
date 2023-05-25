@@ -1,3 +1,7 @@
+"""
+Chapter 1
+"""
+
 
 from app.core import Chapter
 
@@ -8,16 +12,14 @@ class Chapter1(Chapter):
 
     def title(self) -> str:
         """
-
-        :return:
+        :return: the chapter title
         """
 
         return self._title
 
     def content(self) -> str:
         """
-
-        :return:
+        :return: the chapter content
         """
 
         return self._content

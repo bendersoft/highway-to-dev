@@ -1,3 +1,6 @@
+"""
+Specials pages
+"""
 
 from app.core import Special
 
@@ -11,32 +14,28 @@ class SpecialPages(Special):
 
     def title(self) -> str:
         """
-
-        :return:
+        :return: the book title
         """
 
         return self._title
 
     def final(self) -> str:
         """
-
-        :return:
+        :return: the book final page
         """
 
         return self._final
 
     def cover(self) -> str:
         """
-
-        :return:
+        :return: the book cover
         """
 
         return self._cover
 
     def resume(self) -> str:
         """
-
-        :return:
+        :return: the book resume
         """
 
         return self._resume
