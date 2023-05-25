@@ -16,7 +16,7 @@ class MyTestCase(unittest.TestCase):
         """
         title = self.special.title()
         # REM: assert(Expected, Actual)
-        self.assertEqual("Chapter 2 title", title)
+        self.assertEqual("The book title", title)
 
 
 if __name__ == '__main__':
