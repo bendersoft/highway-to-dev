@@ -1,14 +1,24 @@
 
-import unittest
+"""
+Special pages unit test
+"""
 
-from app.book import SpecialPages
+import unittest
+from book import SpecialPages
 
 
 class MyTestCase(unittest.TestCase):
+    """
+    Special pages unit test class
+    """
 
     @classmethod
     def setUpClass(cls):
-        cls.special = SpecialPages()
+        """
+        Init class called one time before tests
+        """
+
+        cls.special = SpecialPages()  # Create the tested class instance
 
     def test_special_title(self):
         """

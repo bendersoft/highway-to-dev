@@ -1,41 +1,38 @@
+
 """
-Specials pages
+Parent class for a book special section
 """
 
-from app.core import Special
 
-
-class SpecialPages(Special):
-
-    _title = "The book title"
-    _final = "The book final"
-    _cover = "The book cover"
-    _resume = "The book resume"
-
+class Special:
+    """
+    Special pages parent class
+    Inherit this class to create a new book.
+    """
     def title(self) -> str:
         """
         :return: the book title
         """
 
-        return self._title
+        raise NotImplementedError()
 
     def final(self) -> str:
         """
         :return: the book final page
         """
 
-        return self._final
+        raise NotImplementedError()
 
     def cover(self) -> str:
         """
         :return: the book cover
         """
 
-        return self._cover
+        raise NotImplementedError()
 
     def resume(self) -> str:
         """
         :return: the book resume
         """
 
-        return self._resume
+        raise NotImplementedError()

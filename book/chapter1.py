@@ -1,12 +1,16 @@
+
 """
 Chapter 1
 """
 
-
-from app.core import Chapter
+from book_core import Chapter
 
 
 class Chapter1(Chapter):
+    """
+    Chapter 2 definition class
+    """
+
     _title = "Chapter 1 title"
     _content = "This is the first chapter content.\nIt is multiline.\nBecause it is a chapter, not a title"
 

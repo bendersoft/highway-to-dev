@@ -1,9 +1,9 @@
+
 """
 Chapter 2
 """
 
-
-from app.core import Chapter
+from book_core import Chapter
 
 
 class Chapter2(Chapter):

@@ -1,7 +1,7 @@
-"""
-Book classes with inheritance with core classes
-"""
 
+"""
+Book classes with inheritance with book_core classes
+"""
 
 from .special import SpecialPages # pylint: disable=W0611  # NOQA
 from .chapter1 import Chapter1    # pylint: disable=W0611  # NOQA

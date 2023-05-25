@@ -1,3 +1,4 @@
+
 """
 Parent class for chapters
 """

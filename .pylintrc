@@ -112,7 +112,7 @@ confidence=
 # Unfortunately, since the options parsing does not support multi-line entries
 # nor line continuation, all of the above items are redundantly specified here
 # in a way that pylint is willing to parse.
-# disable=
+disable=import-error # TODO find the correct import config
 
 [REPORTS]
 
