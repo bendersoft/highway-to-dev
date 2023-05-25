@@ -343,10 +343,3 @@ min-public-methods=2
 
 # Maximum number of public methods for a class (see R0904).
 max-public-methods=50
-
-
-[EXCEPTIONS]
-
-# Exceptions that will emit a warning when being caught. Defaults to
-# "Exception"
-overgeneral-exceptions=Exception
