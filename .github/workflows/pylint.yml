@@ -1,4 +1,4 @@
-name: Pylint
+name: ci-python-pylint
 
 on: [push]
 
