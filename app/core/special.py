@@ -1,5 +1,5 @@
 """
-
+Parent class for a book special section
 """
 
 
